@@ -1,0 +1,68 @@
+﻿'----------------------------------------------------------------------------------------------------
+'This is an automagically generated template for an Addonia AddOn Module.
+'Please refer to INSTRUCTIONS.txt for further help.
+'
+'ModuleName: SEI_ARTCOMPUTER
+'Author: jsalgueiro.SEIDORBCN  @  PC03D36U
+'Date: 1/10/2022 7:36:27 PM
+'----------------------------------------------------------------------------------------------------
+Imports System.IO
+Imports System.Net
+Imports System.Text
+Imports ModuleBase
+Imports Newtonsoft.Json
+Imports Newtonsoft.Json.Linq
+Imports SAPbouiCOM
+
+Public Class SEI_ARTCOMPUTER
+    Inherits ModuleBase.AbstractModuleModel
+
+#Region "Implementation Module Property"
+    Private _implementation As SEI_ARTCOMPUTERImpl
+    Public Property oImplementation() As SEI_ARTCOMPUTERImpl
+        Get
+            Return _implementation
+        End Get
+        Set(ByVal value As SEI_ARTCOMPUTERImpl)
+            _implementation = value
+        End Set
+    End Property
+
+    Public Overrides Sub InitializeImplementation()
+        _implementation = New SEI_ARTCOMPUTERImpl
+        _implementation.initializeModule(oApplication, oCompany, oAddOnService)
+        _implementation.oModule = Me
+    End Sub
+#End Region
+
+
+    Public Overrides Sub queryMetadataCreationConfig(ByRef oMetadataCreationSelector As ModuleBase.cMetadaCreationSelector)
+        oMetadataCreationSelector.ShouldCreateMetadata = False
+    End Sub
+
+    Public Overrides Function getFilterCollection() As List(Of cEventFilter)
+        Return MyBase.getFilterCollection()
+    End Function
+
+    'TODO: Write you module here...
+
+
+
+
+    Public Overrides Sub oApplication_MenuEvent(ByRef pVal As MenuEvent, ByRef BubbleEvent As Boolean)
+        MyBase.oApplication_MenuEvent(pVal, BubbleEvent)
+        If pVal.MenuUID = "257" And pVal.BeforeAction Then
+            Dim oDraft As SAPbobsCOM.Documents
+            oCompany.XmlExportType = SAPbobsCOM.BoXmlExportTypes.xet_ExportImportMode
+            oDraft = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oDrafts)
+            oDraft.GetByKey(14)
+            oDraft.SaveToFile("C:\Users\jsalgueiro\Desktop\Test.xml")
+
+            'Dim oResponse As New Helpers.DownloadSalesOrdersResponse
+            'oResponse = SEI_ARTCOMPUTER_Services.GetInstance(oCompany).DOWNLOAD_SalesOrderNOSYNC()
+        End If
+    End Sub
+
+
+
+End Class

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A31EC266-7291-4ECF-A690-9E86626B5903}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SEI_ARTCOMPUTER</RootNamespace>
+    <AssemblyName>SEI_ARTCOMPUTER</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SEI_ARTCOMPUTER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SEI_ARTCOMPUTER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>%24safeprojectname%24.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>%24safeprojectname%24.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DAOBase">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\DAOBase.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultAdvancedGrid">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultAdvancedGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultCRViewer">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultCRViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultDocScanner">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultDocScanner.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultDocumentOpener">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultDocumentOpener.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultFileSelector">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultFileSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultGeoLocation">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultGeoLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultInicialization">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultInicialization.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultResultMatrix">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultResultMatrix.dll</HintPath>
+    </Reference>
+    <Reference Include="defaultWebViewer">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\defaultWebViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="DNACRViewer, Version=1.0.3435.25741, Culture=neutral, PublicKeyToken=9e72b0f3921dee3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\DNACRViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DNAGeoLocation, Version=1.0.3720.21925, Culture=neutral, PublicKeyToken=9e72b0f3921dee3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\DNAGeoLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DNARemotingBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9e72b0f3921dee3b, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\DNARemotingBase.dll</HintPath>
+    </Reference>
+    <Reference Include="DNAUtils">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\DNAUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="DNAWebViewer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9e72b0f3921dee3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\DNAWebViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DNA_KIT_MetadataCreator, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\DNA_KIT_MetadataCreator.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SAPbobsCOM">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\Interop.SAPbobsCOM.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.SAPbouiCOM">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\Interop.SAPbouiCOM.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MetaDataCreator">
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\MetaDataCreator.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuleBase, Version=1.2.1.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Proyectos\AddOnDNA\ReleaseLibs\ModuleBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_DeliveryDateCabecera.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_DeliveryDateLineas.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_ItemProduct.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_ItemProduct_ExtensionAttributes.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_ItemProduct_ExtensionAttributes_StockItem.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_Items.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersBillingAdress.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersCabecera.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersExtensionAttributes.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersExtensionAttributes_dep.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersLineas.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersLineasParentItem.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersLineas_ExtensionAttributes.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersLineas_ExtensionAttributes_pgw.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersPayment.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersPGW.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersShippingAssignments.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersShippingAssignments_Shipping.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_OrdersShippingAssignments_Shipping_Address.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_StockItem.vb" />
+    <Compile Include="SRC\persistence\DAO\IMP\Wrapper_StockItems.vb" />
+    <Compile Include="SRC\ScheduledTask\ScheduledTaskDeliveryDate.vb" />
+    <Compile Include="SRC\ScheduledTask\ScheduledTaskItems.vb" />
+    <Compile Include="SRC\ScheduledTask\ScheduledTaskPrices.vb" />
+    <Compile Include="SRC\ScheduledTask\ScheduledTaskSalesOrders.vb" />
+    <Compile Include="SRC\ScheduledTask\ScheduledTaskStocks.vb" />
+    <Compile Include="SRC\SEI_ARTCOMPUTER.vb" />
+    <Compile Include="SRC\SEI_ARTCOMPUTERImpl.vb" />
+    <Compile Include="SRC\services\Helpers\DownloadSalesOrdersResponse.vb" />
+    <Compile Include="SRC\services\Helpers\UpdateDeliveryDateCABResponse.vb" />
+    <Compile Include="SRC\services\Helpers\UpdateItemsResponse.vb" />
+    <Compile Include="SRC\services\Helpers\UpdateStocksResponse.vb" />
+    <Compile Include="SRC\services\SEI_ARTCOMPUTER_Services.vb" />
+    <Compile Include="SRC\WebServices\SEI_ARTCOMPUTER_WebServices.vb" />
+    <Compile Include="SRC\WebServices\ISEI_ARTCOMPUTER_WebServices_Contract.vb" />
+    <Compile Include="SRC\TransactionListeners\SEI_ARTCOMPUTER_TransactionListeners.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="USEROBJECTs\ADVANCEDGRIDS\advancedGrid.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOCs\docs_placeholder.txt" />
+    <EmbeddedResource Include="FORMs\forms_placeholder.txt" />
+    <EmbeddedResource Include="IMAGEs\images_placeholder.txt" />
+    <EmbeddedResource Include="SRC\persistence\DAO\dao_placeholder.txt" />
+    <EmbeddedResource Include="SRC\persistence\DAO\IMP\imp_placeholder.txt" />
+    <EmbeddedResource Include="SRC\persistence\MODEL\model_placeholder.txt" />
+    <EmbeddedResource Include="SRC\persistence\SERVICE\service_placeholder.txt" />
+    <EmbeddedResource Include="SRC\services\services_placeholder.txt" />
+    <EmbeddedResource Include="SRC\WebServices\SEI_ARTCOMPUTER_objects.xml" />
+    <EmbeddedResource Include="SRC\WebServices\ContractObjects\contractobjects_placeholder.txt" />
+    <EmbeddedResource Include="ReleaseNotes.xml" />
+    <Content Include="INSTRUCTIONS.txt" />
+    <EmbeddedResource Include="REPORTS\reports_placeholder.txt" />
+    <EmbeddedResource Include="USEROBJECTs\CONFIGURATION\defaultconfig.xml" />
+    <EmbeddedResource Include="USEROBJECTs\FORMATTEDSEARCHES\formattedsearches.xml" />
+    <EmbeddedResource Include="MENUs\menus.xml" />
+    <EmbeddedResource Include="USEROBJECTs\FIELDS\fields.xml" />
+    <EmbeddedResource Include="USEROBJECTs\QUERYCATEGORIES\querycategories.xml" />
+    <EmbeddedResource Include="USEROBJECTs\QUERYS\querys.xml" />
+    <EmbeddedResource Include="USEROBJECTs\SQL\storedprocedures.sql" />
+    <EmbeddedResource Include="USEROBJECTs\SQL\userfunctions.sql" />
+    <EmbeddedResource Include="USEROBJECTs\SQL\views.sql" />
+    <EmbeddedResource Include="USEROBJECTs\SQL\transactionnotification.sql" />
+    <EmbeddedResource Include="USEROBJECTs\TABLES\tables.xml" />
+    <EmbeddedResource Include="USEROBJECTs\UDOS\udos.xml" />
+    <EmbeddedResource Include="USEROBJECTs\USERPERMISSIONS\userpermissions.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LIB\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy C:\Proyectos\AddOnDNA\RELEASELIBS\AddOnCore.exe $(TargetDir)
+copy C:\Proyectos\AddOnDNA\RELEASELIBS\AddOnCore.exe.config $(TargetDir)
+copy C:\Proyectos\AddOnDNA\RELEASELIBS\license.lic $(TargetDir)
+copy C:\Proyectos\AddOnDNA\RELEASELIBS\ModuleParametrizer.exe $(TargetDir)
+copy C:\Proyectos\AddOnDNA\RELEASELIBS\ModuleParametrizer.exe.config $(TargetDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

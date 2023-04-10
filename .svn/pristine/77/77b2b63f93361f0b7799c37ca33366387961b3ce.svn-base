@@ -1,0 +1,11 @@
+﻿Public Class Wrapper_ItemProduct
+    Public Property sku As String
+    Public Property name As String
+    Public Property price As Double
+    Public Property attribute_set_id As Integer = 159
+    Public Property weight As Double = 0
+    Public Property visibility = 1
+    Public Property type_id As String = "simple" 'rpaya(20220329)
+    Public Property extension_attributes As New Wrapper_ItemProduct_ExtensionAttributes
+
+End Class

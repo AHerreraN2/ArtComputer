@@ -1,0 +1,3 @@
+﻿Public Interface ISEI_ARTCOMPUTER_WebServices_Contract
+
+End Interface

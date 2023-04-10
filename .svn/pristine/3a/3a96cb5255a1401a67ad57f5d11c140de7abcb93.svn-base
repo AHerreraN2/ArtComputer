@@ -1,0 +1,7 @@
+﻿<Application>
+  <Menus>
+    <action type="add">
+      <!-- <Menu Checked="0" Enabled="1" FatherUID="3328" String="Prueba generación de menus" Type="1" UniqueID="DNA_Prueba" /> -->
+    </action>
+  </Menus>
+</Application>

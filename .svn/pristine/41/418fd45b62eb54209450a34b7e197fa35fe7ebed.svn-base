@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <description>SEI_ARTCOMPUTER Web Services</description>
+
+  <object name="SEI_ARTCOMPUTER_WebServices" type="SEI_ARTCOMPUTER.SEI_ARTCOMPUTER_WebServices, SEI_ARTCOMPUTER">
+    <property name="DNAWebServiceTicketProvider" ref="ticketProvider"/>
+    <property name="DNAWebServiceConnectionProvider" ref="connectionProvider"/>
+  </object >
+
+  <object id="SEI_ARTCOMPUTER_WebServices_Proxy" type="Spring.Aop.Framework.ProxyFactoryObject, Spring.Aop">
+    <property name="TargetName" value="SEI_ARTCOMPUTER_WebServices"/>
+    <property name="IsSingleton" value="true"/>
+    <property name="InterceptorNames">
+      <list>
+        <value>TraceMethodCallsAdvice</value>
+      </list>
+    </property>
+  </object>
+
+
+  <object id="SEI_ARTCOMPUTER" type="Spring.Web.Services.WebServiceExporter, Spring.Web">
+    <property name="Interfaces">
+      <list>
+        <value>SEI_ARTCOMPUTER.ISEI_ARTCOMPUTER_WebServices_Contract, SEI_ARTCOMPUTER</value>
+      </list>
+    </property>
+    <property name="TargetName" value="SEI_ARTCOMPUTER_WebServices_Proxy"/>
+    <property name="Namespace" value="http://DNA/SEI_ARTCOMPUTER/WebServices" />
+    <property name="Description" value="SEI_ARTCOMPUTER Web Services" />
+  </object >
+  
+</objects>

@@ -1,0 +1,19 @@
+﻿Instructions to make it work
+----------------------------
+
+Your solution must have been created in this specific path:
+
+C:\Proyectos\AddOnDNA\SOURCES\MODULES\SEI_ARTCOMPUTER
+
+
+You have to use this string as a command line parameter
+
+-DEBUG
+
+
+Set $path$/bin/Debug/AddOnCore.exe as the External Startup Application
+
+
+To get rid of any "default" implementation, just remove the reference from the project.
+
+Happy Coding!

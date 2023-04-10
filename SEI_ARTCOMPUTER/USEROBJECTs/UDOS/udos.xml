@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<UDOS>
+  <UDO>
+    <OUDO>
+      <Code>$codigoUDO$</Code>
+      <Name>$nombreUDO$</Name>
+      <ObjectType>boud_MasterData</ObjectType>
+      <TableName>$nombreTablaPrincipal$</TableName>
+      <LogTableName>$nombreTablaLog$</LogTableName >
+      <CanCancel>tNO</CanCancel>
+      <CanClose>tNO</CanClose>
+      <CanCreateDefaultForm>tNO</CanCreateDefaultForm>
+      <CanDelete>tYES</CanDelete>
+      <CanFind>tYES</CanFind>
+      <CanLog>tNO</CanLog>
+      <CanYearTransfer>tNO</CanYearTransfer>
+      <ManageSeries>tNO</ManageSeries>
+    </OUDO>
+    <UDO1>
+      <TableName>$nombreTablaHija$</TableName>
+      <LogTableName>$nombreTablaLogTablaHija$</LogTableName>
+    </UDO1>
+    <UDO2>
+      <ColumnAlias></ColumnAlias>
+      <ColumnDescription></ColumnDescription>
+    </UDO2>
+    <UDO3>
+      <FormColumnAlias></FormColumnAlias>
+      <FormColumnDescription></FormColumnDescription>
+    </UDO3>
+  </UDO>
+</UDOS>
+

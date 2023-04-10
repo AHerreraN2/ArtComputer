@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration DisplayName= "" >
+  <Parameter>
+    <key>$configurationKey$</key>
+    <value>$configurationValue$</value>
+    <description>$configurationDescription$</description>
+    <type>string|char|integer|bool|date|combo|file|double</type>
+    <values>
+      <value>
+        <code></code>
+        <name></name>
+      </value>
+    </values>
+  </Parameter>
+</Configuration>

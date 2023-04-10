@@ -1,0 +1,14 @@
+﻿Public Class Wrapper_OrdersLineas
+
+    Public Property product_type As String
+    Public Property parent_item As New Wrapper_OrdersLineasParentItem
+    Public Property extension_attributes As New Wrapper_OrdersLineas_ExtensionAttributes
+
+    Public Property item_id As Integer
+    Public Property sku As String
+    Public Property row_total As Double
+    Public Property qty_ordered As Integer
+    Public Property discount_amount As Double
+    Public Property base_original_price As Double
+
+End Class

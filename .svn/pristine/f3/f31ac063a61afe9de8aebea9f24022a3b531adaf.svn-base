@@ -1,0 +1,54 @@
+﻿Public Class Wrapper_ItemProduct
+  Public Property sku As String
+  Public Property name As String
+  Public Property price As Double
+  Public Property attribute_set_id As Integer = 159
+  Public Property weight As Double = 0
+  Public Property visibility = 1
+  Public Property type_id As String = "simple" 'rpaya(20220329)
+  Public Property extension_attributes As New Wrapper_ItemProduct_ExtensionAttributes
+
+  Public Property status = 1 '220715 ahn
+
+End Class
+
+Public Class Wrapper_ItemRes
+  Public Property id As String
+
+
+End Class
+
+Public Class Wrapper_Customer
+  Public Property customer As New Wrapper_Client
+
+  Public Property password As String
+End Class
+
+Public Class Wrapper_Client
+    Public Property id As String
+    Public Property group_id As String
+    Public Property email As String
+    Public Property firstname As String
+    Public Property lastname As String
+    Public Property website_id As String
+    'Public Property sendemail_store_id As String
+    'Public Property addressesid As String
+    'Public Property regionregion_code As String
+    'Public Property regionregion As String
+    'Public Property regionregion_id As String
+    'Public Property addressesregion_id As String
+    'Public Property addressesstreet As String
+    'Public Property addressescompany As String
+    'Public Property addressestelephone As String
+    'Public Property addressesfax As String
+    'Public Property addressespostcode As String
+    'Public Property addressescity As String
+    'Public Property addressesFirstname As String
+    'Public Property addressesdefault_shipping As String
+    'Public Property addressesdefault_billing As String
+    'Public Property password As String
+
+
+
+
+  End Class
